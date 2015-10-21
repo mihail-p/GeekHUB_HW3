@@ -6,6 +6,7 @@ class Vegetables extends AbstractFood
 {
     protected $type;
     protected $weight;
+    protected $price;
     protected $color;
 
     public function getType()
@@ -26,6 +27,16 @@ class Vegetables extends AbstractFood
     public function setWeight($weight)
     {
         $this->weight = $weight;
+    }
+
+    public function getPrice()
+    {
+        return $this->price;
+    }
+
+    public function setPrice($price)
+    {
+        $this->price = $price;
     }
 
     public function getColor()
