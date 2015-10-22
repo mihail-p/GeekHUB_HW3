@@ -1,0 +1,17 @@
+{
+    "name": "mihail-p/geek-hub_hw3",
+    "description": "Food Class",
+    "authors": [
+        {
+            "name": "Pronyuk Mihail",
+            "email": "mishaprk@gmail.com"
+        }
+    ],
+     "autoload": {
+       "psr-4": {
+          "Food\\": "src/Food"
+       }
+     },
+    "minimum-stability": "dev",
+    "require": {}
+}
