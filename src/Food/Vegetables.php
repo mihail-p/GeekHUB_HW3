@@ -4,10 +4,21 @@ namespace Food;
 
 class Vegetables extends AbstractFood
 {
+    protected $name;
     protected $type;
     protected $weight;
     protected $price;
     protected $color;
+
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
 
     public function getType()
     {
@@ -52,8 +63,6 @@ class Vegetables extends AbstractFood
     public function __toString()
     {
         $str= parent::__toString();
-        $str .= 'Type: '. $this->getType().'<br />';
-        $str .= 'Weight: '. $this->getWeight().'<br />';
         $str .= 'Color: '. $this->getColor().'<br />';
 
         return $str;

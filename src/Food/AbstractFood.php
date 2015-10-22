@@ -4,19 +4,22 @@ namespace Food;
 
 abstract class AbstractFood
 {
-    public abstract function gettype();
-    public abstract function settype();
-    public abstract function getweight();
-    public abstract function setweight();
-    public abstract function getprice();
-    public abstract function setprice();
+    public abstract function getName();
+    public abstract function setName($name);
+    public abstract function getType();
+    public abstract function setType($type);
+    public abstract function getWeight();
+    public abstract function setWeight($weight);
+    public abstract function getPrice();
+    public abstract function setPrice($price);
 
-    public function __toString()
+        public function __toString()
     {
         $str = '';
-        $str .= 'Type: ' . $this->gettype() . "<br>\n";
-        $str .= 'Weight: ' . $this->getweight() . "<br>\n";
-        $str .= 'Price: ' . $this->getprice() . "<br>\n";
+        $str .= 'Name: ' . $this->getName() . "<br>\n";
+        $str .= 'Type: ' . $this->getType() . "<br>\n";
+        $str .= 'Weight: ' . $this->getWeight() . "<br>\n";
+        $str .= 'Price: ' . $this->getPrice() . "<br>\n";
         return $str;
     }
 
