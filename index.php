@@ -20,6 +20,16 @@ $bananas->setWeight('150gr');
 echo'Fruits:<br />';
 echo $bananas->__toString();
 
+$apples = new Fruits();
+$apples->setName('apples');
+$apples->setCountry('Poland');
+$apples->setType('Jonathan');
+$apples->setPrice('25');
+$apples->setWeight('170gr');
+
+echo'<br />Fruits:<br />';
+echo $apples->__toString();
+
 $cabbages = new Vegetables();
 $cabbages->setName('cabbages');
 $cabbages->setType('broccoli');

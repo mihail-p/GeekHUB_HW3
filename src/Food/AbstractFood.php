@@ -13,6 +13,12 @@ abstract class AbstractFood
     public abstract function getPrice();
     public abstract function setPrice($price);
 
+   /* public function __construct($name, $type)
+    {
+       $this->$name = $name;
+        $this->$type = $type;
+    }*/
+
         public function __toString()
     {
         $str = '';
