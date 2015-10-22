@@ -13,7 +13,6 @@ class Fruits extends AbstractFood
 
     public function __construct()
     {
-        //parent::__construct($name, $type);
         $this->name = 'apples';
         $this->type = 'Semerenko';
         $this->country = 'Ukraine';
