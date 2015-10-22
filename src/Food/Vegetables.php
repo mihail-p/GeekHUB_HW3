@@ -47,7 +47,11 @@ class Vegetables extends AbstractFood
 
     public function setPrice($price)
     {
-        $this->price = $price;
+        if ($price <= '9') {
+            $this->price = '<b style="color: green;">' . $price .
+                ' </b><small style="color: red;"> Good price ;)</small> ';
+        }
+
     }
 
     public function getColor()
@@ -62,8 +66,8 @@ class Vegetables extends AbstractFood
 
     public function __toString()
     {
-        $str= parent::__toString();
-        $str .= 'Color: '. $this->getColor().'<br />';
+        $str = parent::__toString();
+        $str .= 'Color: ' . $this->getColor() . '<br />';
 
         return $str;
     }
